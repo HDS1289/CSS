@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>static</title>
+        <style>
+            div {
+                padding: 3rem;
+                float: left;
+                position: static;  /* 어떤 객체가 먼저 배치되었을 때 그 다음 객체가 나란히 배치되는 것 */
+            }
+
+            .one {
+                background: red;
+            }
+
+            .two {
+                background: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'></div>
+        <div class='two'></div>
+    </body>
+</html>

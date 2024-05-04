@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>z-index</title>
+        <style>
+            div {
+                padding: 4rem;
+                position: fixed;     /* z-index를 쓰기 전에는 웹 문서의 흐름대로 맨 나중에 생성된 객체가 맨 위로 올라간다.*/
+            }
+                                    /* z-index를 사용하면 z-index 크기가 가장 큰 객체가 맨 위로 올라간다. */
+            .one {
+                background: red;
+                left: 1rem;
+                top: 1rem;
+                z-index: 3;
+            }
+
+            .two {
+                background: green;
+                left: 2rem;
+                top: 2rem;
+                z-index: 1;
+            }
+
+            .three {
+                background: blue;
+                left: 3rem;
+                top: 3rem;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'></div>
+        <div class='two'></div>
+        <div class='three'></div>
+    </body>
+</html>

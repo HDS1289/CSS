@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>ordered_list</title>
+        <style>
+            .dec-zero {
+                list-style-type: decimal-leading-zero;
+            }
+
+            .roman {
+                list-style-type: lower-roman;
+            }
+
+            .alphabet {
+                list-style-type: upper-alpha;
+                list-style-position: inside;  /* ouside가 기본값 */
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>강아지</li>   <!-- decimal이 기본값 -->
+            <li>고양이</li>
+        </ol>
+
+        <ol class='dec-zero'>
+            <li>강아지</li>
+            <li>고양이</li>
+        </ol>
+
+        <ol class='roman'>
+            <li>강아지</li>
+            <li>고양이</li>
+        </ol>
+
+        <ol class='alphabet'>
+            <li>강아지</li>
+            <li>고양이</li>
+        </ol>
+    </body>
+</html>

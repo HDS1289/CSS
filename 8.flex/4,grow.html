@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>grow</title>
+        <style>
+            #container {
+                display: flex;
+                border: .1rem solid red;
+                width: 20rem;
+            }
+
+            .item {
+                border: .1rem dotted;
+                flex-basis: 3rem;      /* auto(default) */
+                 /* width: 3rem;
+                word-break: break-all;   /* 텍스트를 쪼개고(word-break: break-all;) 다시 줄바꿈(word-wrap: wrap;)한다. 
+                word-wrap: wrap; */
+                /* flex-grow: 1;   /* container를 가득 채우는 데에 초점 */
+            }
+
+            .item:nth-child(1) {
+                flex-grow: 1;     /* 비율을 나타내는 값이다. 숫자값은 상대적이다. 객체끼리의 비율이 다르게 된다. */
+            }
+
+            .item:nth-child(2) {
+                flex-grow: 3;
+            }
+
+            .item:nth-child(3) {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <div class='item'>111</div>
+            <div class='item'>222222222</div>  <!--wrapping-->
+            <div class='item'>333</div>
+        </div>
+    </body>
+</html>

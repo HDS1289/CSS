@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>absolute</title>
+        <style>
+            div {
+                padding: 3rem;
+            }
+
+            #container {
+                position: relative;    /* relative (상대적인 위치)로 정한 container가 기준이 됨 */
+                padding: 10rem;        /* width는 정해진 값이 없으므로 브라우저 창을 기준으로 100%차지하는 기본값을 보임 */
+                border: .1rem solid;   /* container객체 왼쪽 상단 모서리가 원점 */
+            }
+
+            .one {
+                background: red;
+                position: absolute;
+                left: 6rem;
+                top: 9rem;
+            }
+
+            .two {
+                background: orange;
+                position: absolute;
+                left: 8rem;
+                top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <div class='one'></div>
+            <div class='two'></div>
+        </div>
+    </body>
+</html>

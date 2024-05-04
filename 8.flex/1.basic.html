@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>basic</title>
+        <style>
+            .item {
+                border: .1rem dotted;
+            }
+
+            /* #container {                      
+                display: flex;
+                border: .1rem solid red;
+                flex-direction: row(default), row-reverse, column, column-reverse;       
+            } */
+
+            /* #container {
+                display: flex;
+                width: 2rem;   ======> flex-wrap은 세로줄로 적용이 되므로 width를 반드시 정해야 한다.
+                border: .1rem solid red;
+                flex-wrap: nowrap(default), wrap, wrap-reverse;
+            } */
+
+            #container {
+                display: flex;
+                width: 2rem;
+                border: .1rem solid red;
+                flex-flow: column nowrap;   /* flex-flow = flex-direction + flex-wrap */
+            }
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <div class='item'>111</div>
+            <div class='item'>222</div>
+            <div class='item'>333</div>
+        </div>
+    </body>
+</html>

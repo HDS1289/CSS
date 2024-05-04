@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>pseudo_element_before_after</title>
+        <style>
+            p {
+                border: .1rem solid;
+            }
+
+            p::before {
+                content: '시작';
+                background-color: blue;
+                color: white;
+            }
+
+            p::after {
+                content: '끝';
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        우주하마<p>개발자 집주소 삽니다.</p>우주하마
+    </body>
+</html>

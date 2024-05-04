@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>background_size</title>
+        <style>
+            div {
+                background-image: url(../../../res/leaf.jpg);
+                width: 15rem;
+                height: 15rem;
+                border: .1rem solid;
+                background-repeat: no-repeat;
+            }
+
+            .two {
+                background-size: auto; /* auto가 기본값 */
+            }
+
+            .three {
+                background-size: contain; /* content 안에 배경 이미지가 다 들어오도록 함 */
+            }
+
+            .four {
+                background-size: cover; /* background image로 content를 모두 채울 정도의 크기 */
+            }
+
+            .five {
+                background-size: 8rem 8rem; /* width height 크기 */
+            }
+
+            .six {
+                background-size: 50% 50%; /* width height 백분율 표시, border로 지정한 객체 영역 크기에 대한 비율 표시 */
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class='two'>auto</div>
+        <div class='three'>contain</div>
+        <div class='four'>cover</div>
+        <div class='five'>8rem 8rem</div>
+        <div class='six'>50% 50%</div>
+    </body>
+</html>

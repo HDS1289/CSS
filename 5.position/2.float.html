@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>float</title>
+        <style>
+            div {
+                padding: 1rem;
+                margin: 1rem;
+                border: .1rem solid; 
+                float: left;  /* content 영역만 변함, float 미적용 시 width는 100% */
+            }
+
+            #three {
+                clear: left;  /* three 객체 ==> clear로 인하여 float 속성이 사라짐 four ==> float 속성이 유지됨 */
+            }
+        </style>
+    </head>
+    <body>
+        <div>one</div>
+        <div>two</div>
+        <div id='three'>three</div>
+        <div>four</div>
+    </body>
+</html>

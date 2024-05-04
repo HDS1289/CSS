@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>text</title>
+        <style>
+            h3 {
+                text-decoration: underline;
+                color: blue;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            span {
+                text-decoration: line-through; /* overline, underline, line-through */
+            }
+
+            .letter {
+                letter-spacing: .2rem;
+            }
+
+            .shadow {
+                text-shadow: .3rem .3rem .1rem gray; /* left, top, blur, color */
+            }
+
+            .word {
+                word-spacing: .5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>몸</h3>
+        <dl>
+            <dt><a href='#'>정</a></dt>
+            <dd>육체, <span>physical</span></dd>
+            <dt>기</dt>
+            <dd class='letter'>기체, energy</dd>
+            <dt class='shadow'>신</dt>
+            <dd class='letter word'>정보체, logical</dd>
+        </dl>
+    </body>
+</html>

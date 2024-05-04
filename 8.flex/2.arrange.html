@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>arrange</title>
+        <style>
+            .item {
+                border: .1rem dotted;
+            }
+
+            /* #container {
+                display: flex;
+                width: 10rem;
+                height: 5rem;
+                border: .1rem solid red;    
+                justify-content: space-evenly;   flex-start(defalut), flex-end, center, space-around, space-between, space-evenly
+            }  */
+
+            #container {
+                display: flex;
+                width: 10rem;
+                height: 5rem;
+                border: .1rem solid red;
+                align-items: center;     /* stretch(default), flex-start, flex-end, center */
+                justify-content: center;
+            } 
+        </style>
+    </head>
+    <body>
+        <div id='container'>
+            <div class='item'>111</div>
+            <div class='item'>222</div>
+            <div class='item'>333</div>
+        </div>
+    </body>
+</html>
